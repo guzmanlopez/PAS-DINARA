@@ -37,12 +37,25 @@ options(shiny.maxRequestSize=300*1024^2, digits=16)
 # 
 # isobatas <- isobatas[celdas_iso,]
 
+# Establecer entorno de trabajo en carpeta temporal
+setwd("/tmp/")
+
 # Cargar entorno de trabajo
 url_entorno <- "https://github.com/guzmanlopez/PAS-DINARA/blob/master/pas-dinara.RData?raw=true"
 destfile <- paste(getwd(),"/pas-dinara.RData", sep="")
 wd <- paste(getwd(),"/", sep="")
 download.file(url = url_entorno, destfile=destfile, method = "wget")
 load("pas-dinara.RData")
+
+# Descargar javascripts y estilos 
+url_binding <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/binding.js"
+download.file(url = url_binding, destfile=paste(wd,"binding.js", sep=""), method = "wget")
+
+url_gomap <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/gomap.js"
+download.file(url = url_gomap, destfile=paste(wd,"gomap.js", sep=""), method = "wget")
+
+url_styles <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/styles.css"
+download.file(url = url_styles, destfile=paste(wd,"styles.css", sep=""), method = "wget")
 
 shinyServer(function(input, output, session) {
   
