@@ -9,10 +9,10 @@ library(xts)
 options(shiny.maxRequestSize=300*1024^2, digits=16)
 
 # Extensión
-xmin <- -55.0853471962
-xmax <- -54.8169908485
-ymin <- -35.0635161252
-ymax <- -34.8499263791
+#xmin <- -55.0853471962
+#xmax <- -54.8169908485
+#ymin <- -35.0635161252
+#ymax <- -34.8499263791
 
 # # Shapefiles de base
 # costa <- readShapeLines(fn="/home/guzman/Shiny/SBL/shapes/linea_de_costa.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
@@ -38,7 +38,11 @@ ymax <- -34.8499263791
 # isobatas <- isobatas[celdas_iso,]
 
 # Cargar entorno de trabajo
-load("/home/guzman/Escritorio/pas-dinara.RData")
+url_entorno <- "https://github.com/guzmanlopez/PAS-DINARA/blob/master/pas-dinara.RData?raw=true"
+destfile <- paste(getwd(),"/pas-dinara.RData", sep="")
+wd <- paste(getwd(),"/", sep="")
+download.file(url = url_entorno, destfile=destfile, method = "wget")
+load("pas-dinara.RData")
 
 shinyServer(function(input, output, session) {
   
@@ -106,7 +110,7 @@ shinyServer(function(input, output, session) {
       df_pos = data.frame("Tiempo"=as.character(df$V1), "LAT"=as.character(df$V2), "LON"=as.character(df$V3), "UTM_N"=as.character(df$V4), "UTM_E"=as.character(df$V5))    
       
       # Exportar
-      if(exportar == 'si') write.table(df_pos, paste("/home/guzman/Documentos/DINARA/SIG/Mejillon/Tablas/",nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
+      if(exportar == 'si') write.table(df_pos, paste(wd,nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
       
       if(exportar == 'no') return(df_pos)
       
@@ -116,7 +120,7 @@ shinyServer(function(input, output, session) {
       df_pos = as.data.frame(df_pos)
       
       # Exportar
-      if(exportar == 'si') write.table(df_pos, paste("/home/guzman/Documentos/DINARA/SIG/Mejillon/Tablas/",nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
+      if(exportar == 'si') write.table(df_pos, paste(wd,nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
       
       if(exportar == 'no') return(df_pos)
       
@@ -137,7 +141,7 @@ shinyServer(function(input, output, session) {
     datasetInput_pos()
   })
   
-  ### SIG ####
+  ### SIG
   
   ### Interactive Map ####
   
@@ -197,7 +201,3 @@ shinyServer(function(input, output, session) {
   })
   
   })
-
-
-
-
