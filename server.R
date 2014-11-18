@@ -14,29 +14,31 @@ xmax <- -54.8169908485
 ymin <- -35.0635161252
 ymax <- -34.8499263791
 
-# Shapefiles de base
-costa <- readShapeLines(fn="~/Documentos/Shiny/SBL/shapes/linea_de_costa.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
+# # Shapefiles de base
+# costa <- readShapeLines(fn="/home/guzman/Shiny/SBL/shapes/linea_de_costa.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
+# 
+# est_mejillon <- readShapePoints(fn="/home/guzman/Shiny/SBL/shapes/Estaciones-muestreo-mejillon.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
+# 
+# isobatas <- readShapeLines(fn="/home/guzman/Shiny/SBL/shapes/isobatas-Maldonado.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
+# 
+# ##Polygon(coords=matrix(data=c(xmin,xmax,xmax,xmin,ymax,ymax,ymin,ymin),4,2, byrow = FALSE))
+# ##SpatialPolygons(Srl = list())
+# ##rgeos::gIntersection(isobatas, )
+# 
+# isobatas <- coordinates(isobatas)
+# 
+# n.obs <- sapply(isobatas, length)
+# seq.max <- seq_len(max(n.obs))
+# mat <- t(sapply(isobatas, "[", i = seq.max))
+# isobatas <- as.data.frame(do.call('rbind',mat))
+# colnames(isobatas) <- c("lon", "lat")
+# 
+# celdas_iso <- which(isobatas$lon < xmax & isobatas$lon > xmin & isobatas$lat < ymax & isobatas$lat > ymin)
+# 
+# isobatas <- isobatas[celdas_iso,]
 
-est_mejillon <- readShapePoints(fn="~/Documentos/Shiny/SBL/shapes/Estaciones-muestreo-mejillon.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
-
-isobatas <- readShapeLines(fn="~/Documentos/Shiny/SBL/shapes/isobatas-Maldonado.shp", proj4string=CRS("+proj=longlat +datum=WGS84 +ellps=WGS84"))
-
-Polygon(coords=matrix(data=c(xmin,xmax,xmax,xmin,ymax,ymax,ymin,ymin),4,2, byrow = FALSE))
-SpatialPolygons(Srl = list())
-
-rgeos::gIntersection(isobatas, )
-
-isobatas <- coordinates(isobatas)
-
-n.obs <- sapply(isobatas, length)
-seq.max <- seq_len(max(n.obs))
-mat <- t(sapply(isobatas, "[", i = seq.max))
-isobatas <- as.data.frame(do.call('rbind',mat))
-colnames(isobatas) <- c("lon", "lat")
-
-celdas_iso <- which(isobatas$lon < xmax & isobatas$lon > xmin & isobatas$lat < ymax & isobatas$lat > ymin)
-
-isobatas <- isobatas[celdas_iso,]
+# Cargar entorno de trabajo
+load("/home/guzman/Escritorio/pas-dinara.RData")
 
 shinyServer(function(input, output, session) {
   
