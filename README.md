@@ -11,21 +11,21 @@ Requisitos
 ===
 
 ```R
-library(shiny)
-library(devtools)
+library('shiny')
+library('devtools')
 devtools::install_github('leaflet-shiny', 'jcheng5')
-library(leaflet)
-library(sp)
-library(maptools)
-library(geosphere)
-library(stringr)
-library(xts)
+library('leaflet')
+library('sp')
+library('maptools')
+library('geosphere')
+library('stringr')
+library('xts')
 ```
 Para ejecutar la aplicación desde R: 
 ===
 
 ```R
-runGitHub("PAS-DINARA", "guzmanlopez")
+runGitHub('PAS-DINARA', 'guzmanlopez')
 ```
 
 Capturas de pantalla
