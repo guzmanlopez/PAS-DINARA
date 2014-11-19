@@ -11,7 +11,7 @@ Capturas de pantalla
 ===
 
 Cargar datos:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Figuras/captura-de-pantalla-01.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-01.png)
 
 Ver mapa:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Figuras/captura-de-pantalla-02.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-02.png)
