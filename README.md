@@ -7,6 +7,23 @@ Está aplicación está siendo desarrollada en el marco del convenio entre la Di
 
 El objetivo es generar una herramienta que permita a los usuarios acceder fácil y rapidamente a los datos del sonar de barrido lateral luego de cada campaña.
 
+Requisitos
+===
+
+library(shiny)
+library(devtools)
+devtools::install_github('leaflet-shiny', 'jcheng5')
+library(leaflet)
+library(sp)
+library(maptools)
+library(geosphere)
+library(stringr)
+library(xts)
+
+Para ejecutar la aplicación desde R: 
+===
+runGitHub("PAS-DINARA", "guzmanlopez")
+
 Capturas de pantalla
 ===
 
