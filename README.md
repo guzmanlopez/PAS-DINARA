@@ -10,6 +10,7 @@ El objetivo es generar una herramienta que permita a los usuarios acceder fácil
 Requisitos
 ===
 
+```R
 library(shiny)
 library(devtools)
 devtools::install_github('leaflet-shiny', 'jcheng5')
@@ -19,10 +20,13 @@ library(maptools)
 library(geosphere)
 library(stringr)
 library(xts)
-
+```
 Para ejecutar la aplicación desde R: 
 ===
+
+```R
 runGitHub("PAS-DINARA", "guzmanlopez")
+```
 
 Capturas de pantalla
 ===
