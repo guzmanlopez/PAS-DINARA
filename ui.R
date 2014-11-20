@@ -104,20 +104,23 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                                tags$div(id="cite",'Propuesta de estudio de la Bahía de Maldonado. Convenio PAS-DINARA.')
                                ),
              
-             tabPanel("Bitácora",
+             tabPanel("Bitácora",                    
                       icon=icon(name="location-arrow", "fa-2x"),
+                      
                       fluidRow(
-                        column(4,
-                               includeText("include.txt"),
-                               br(),
-                               pre(includeText("include.txt"))
+                        column(2,
+                               offset=0.5,
+                               includeMarkdown("/home/guzman/GitHub/PAS-DINARA/Texto/indice.md")
                         ),
-                        column(8,
-                               includeHTML("include.html"),
-                               includeMarkdown("include.md")
+                        column(10,
+                               offset=-0.5,
+                               includeMarkdown("/home/guzman/GitHub/PAS-DINARA/Texto/contenido.md")
                         )
-                        )
-                      ),
+                      )),
+                         
+             
+#              includeText("pas-cipac.txt")
+#              includeText("dinara.txt")
              
              tabPanel("Acerca de esta APP", icon=icon(name="comments", "fa-2x"),
                       sidebarPanel(

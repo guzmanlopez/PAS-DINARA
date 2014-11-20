@@ -57,6 +57,13 @@ download.file(url = url_gomap, destfile=paste(wd,"gomap.js", sep=""), method = "
 url_styles <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/styles.css"
 download.file(url = url_styles, destfile=paste(wd,"styles.css", sep=""), method = "wget")
 
+# Descargar contenido de texto
+url_pas.cipac <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Texto/pas-cipac.txt"
+download.file(url = url_pas.cipac, destfile=paste(wd,"pas-cipac.txt", sep=""), method = "wget")
+
+url_dinara <- "https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Texto/dinara.txt"
+download.file(url = url_dinara, destfile=paste(wd,"dinara.txt", sep=""), method = "wget")
+
 shinyServer(function(input, output, session) {
   
   ### Entradas de datos ####
