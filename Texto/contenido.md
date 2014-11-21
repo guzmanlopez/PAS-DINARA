@@ -27,21 +27,29 @@ La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal re
 <br>
 <br>
 
-<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag-G6w8ddIaxdDV1M3hCaUV1X2hPVzVPbTVuV1VubWc&font=BreeSerif-OpenSans&maptype=osm&lang=es&height=400' width='100%' height='400' frameborder='0'></iframe>
+<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag-G6w8ddIaxdDV1M3hCaUV1X2hPVzVPbTVuV1VubWc&font=BreeSerif-OpenSans&maptype=osm&lang=es&height=400' width='100%' height='500' frameborder='0'></iframe>
 
 <br>
 
 ## Bahía de Maldonado <a name="bdm"></a>
 
+<br>
+
+### Mapa
+
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26771.275938515242!2d-54.9696751!3d-34.9622687!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suy!4v1416586282280"  width="100%" height="600" frameborder="0" style="border:0"></iframe>
+
+
 ### Primer salida de agua <a name="bdm1"></a>
 
 <br>
 
-**Fecha:** 06/06/2014
-**Lugar:** Bahía de Maldonado (inmediaciones de Isla Gorriti)
-**Duración:** 1 día (09:00 a 17:00 horas)
-**Participantes por DINARA:** Julio Chocca, Yamandú Marín, Silvana González y Guzmán López
-**Participantes por PAS-CIPAC:** Antonio Lezama, Eduardo Keldjian, Andrés Gascue y Tabaré Bonnevaux
++ **Fecha:** 06/06/2014
++ **Lugar:** Bahía de Maldonado (inmediaciones de Isla Gorriti)
++ **Duración:** 1 día (09:00 a 17:00 horas)
++ **Participantes por DINARA:** Julio Chocca, Yamandú Marín, Silvana González y Guzmán López
++ **Participantes por PAS-CIPAC:** Antonio Lezama, Eduardo Keldjian, Andrés Gascue y Tabaré Bonnevaux
 
 <br>
 
