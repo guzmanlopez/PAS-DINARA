@@ -38,7 +38,7 @@ La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal re
 ### Mapa
 
 <br>
-<iframe src="https://mapsengine.google.com/map/embed?mid=zoQVpSV2YuDQ.kicC1ZYm3Mv0" width="100%" height="480"></iframe>
+<iframe src="https://mapsengine.google.com/map/embed?mid=zoQVpSV2YuDQ.kicC1ZYm3Mv0" width="80%" height="500"></iframe>
 
 
 ### Primer salida de agua <a name="bdm1"></a>

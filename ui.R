@@ -34,30 +34,35 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
              
              tabPanel("SIG",
                       icon=icon(name="map-marker", "fa-2x"),
-                      div(class="outer",
-                          tags$head(
-                            # Include our custom CSS
-                            includeCSS("styles.css"),
-                            includeScript("gomap.js"),
-                            includeScript("binding.js")
-                            ),
-                          leafletMap("map", width="100%", height="100%",
-                                     initialTileLayer = "//{s}.tiles.mapbox.com/v3/guzman.j035h3hc/{z}/{x}/{y}.png",
-                                     initialTileLayerAttribution = HTML('Maps by <a href="http://www.mapbox.com/">Mapbox</a>'),
-                                     options=list(center= c(-34.9400, -54.9700),
-                                                  zoom = 13,
-                                                  maxBounds = list(list(-32.99966,-49.49774), list(-40.00023,-59.50186))
-                                                  )
-                                     ),
-                          absolutePanel(id = "controls", class="modal", fixed=TRUE, draggable=TRUE, top=120, left=300, right="auto", bottom="auto", width=200, height="auto",
-                                        h4("Capas espaciales"),
-                                        tags$hr(),
-                                        checkboxGroupInput('capas', label = "", choices = c('Isóbatas'='isobatas', 'Estaciones de mejillón'='est_mej','Pecios'='pecios','Densidad AIS (2012-2013)'='dens_ais','Navegación sonar'='nav_son')
-                                                           )
-                                        )
-                          ),
-                      
-                      tags$div(id="cite",'Propuesta de estudio de la Bahía de Maldonado. Convenio PAS-DINARA.')
+                      fluidRow(
+                        column(2,
+                               renderMarkdown('<iframe src="https://mapsengine.google.com/map/embed?mid=zoQVpSV2YuDQ.kicC1ZYm3Mv0" width="100%" height="100%"></iframe>')
+                               )
+                        )
+#                       div(class="outer",
+#                           tags$head(
+#                             # Include our custom CSS
+#                             includeCSS("styles.css"),
+#                             includeScript("gomap.js"),
+#                             includeScript("binding.js")
+#                             ),
+#                           leafletMap("map", width="100%", height="100%",
+#                                      initialTileLayer = "//{s}.tiles.mapbox.com/v3/guzman.j035h3hc/{z}/{x}/{y}.png",
+#                                      initialTileLayerAttribution = HTML('Maps by <a href="http://www.mapbox.com/">Mapbox</a>'),
+#                                      options=list(center= c(-34.9400, -54.9700),
+#                                                   zoom = 13,
+#                                                   maxBounds = list(list(-32.99966,-49.49774), list(-40.00023,-59.50186))
+#                                                   )
+#                                      ),
+#                           absolutePanel(id = "controls", class="modal", fixed=TRUE, draggable=TRUE, top=120, left=300, right="auto", bottom="auto", width=200, height="auto",
+#                                         h4("Capas espaciales"),
+#                                         tags$hr(),
+#                                         checkboxGroupInput('capas', label = "", choices = c('Isóbatas'='isobatas', 'Estaciones de mejillón'='est_mej','Pecios'='pecios','Densidad AIS (2012-2013)'='dens_ais','Navegación sonar'='nav_son')
+#                                                            )
+#                                         )
+#                           ),
+#                       
+#                       tags$div(id="cite",'Propuesta de estudio de la Bahía de Maldonado. Convenio PAS-DINARA.')
                       ),
              
              tabPanel("Cargar SBL", icon=icon(name="file", "fa-2x"),
