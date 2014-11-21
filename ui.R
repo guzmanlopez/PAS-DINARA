@@ -35,8 +35,8 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
              tabPanel("SIG",
                       icon=icon(name="map-marker", "fa-2x"),
                       fluidRow(
-                        column(2,
-                               renderMarkdown('<iframe src="https://mapsengine.google.com/map/embed?mid=zoQVpSV2YuDQ.kicC1ZYm3Mv0" width="100%" height="100%"></iframe>')
+                        column(12,
+                               includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
                                )
                         )
 #                       div(class="outer",
