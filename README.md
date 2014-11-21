@@ -31,8 +31,17 @@ runGitHub('PAS-DINARA', 'guzmanlopez')
 Capturas de pantalla
 ===
 
-Cargar datos:
+Bitácora:
 ![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-01.png)
 
-Ver mapa:
+Seguimiento de actividades:
 ![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-02.png)
+
+SIG:
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-03.png)
+
+Cargar datos:
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-04.png)
+
+Acerca de la app:
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos y figuras/captura-de-pantalla-05.png)

@@ -10,6 +10,8 @@ output: html_document
     
 ### Actividades
 
+[Línea de Tiempo](#ldt)
+
 [Bahía de Maldonado](#bdm)
 
   * [Primer salida: 06/06/2014](#bdm1)
