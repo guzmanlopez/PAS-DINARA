@@ -38,7 +38,7 @@ La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal re
 ### Mapa
 
 <br>
-<iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d26771.275938515242!2d-54.9696751!3d-34.9622687!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2suy!4v1416586282280"  width="100%" height="600" frameborder="0" style="border:0"></iframe>
+<iframe src="https://mapsengine.google.com/map/embed?mid=zoQVpSV2YuDQ.kicC1ZYm3Mv0" width="100%" height="480"></iframe>
 
 
 ### Primer salida de agua <a name="bdm1"></a>
@@ -100,49 +100,4 @@ La embarcación se mostro apta, versátil y con la seguridad necesaria para reci
 <div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/fotos-salida-01.png" alt="" style="float: center; margin-right:0px"/></div> 
 <br>
 ------------------------------------------------------------------------
-
-
-
-```R
-
-shiny::HTML(<!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-    <meta charset="utf-8">
-    <title>KML Layers</title>
-    <style>
-      html, body, #map-canvas {
-        height: 100%;
-        margin: 0px;
-        padding: 0px
-      }
-    </style>
-    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
-    <script>
-function initialize() {
-  var chicago = new google.maps.LatLng(41.875696,-87.624207);
-  var mapOptions = {
-    zoom: 11,
-    center: chicago
-  }
-
-  var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
-
-  var ctaLayer = new google.maps.KmlLayer({
-    url: 'http://gmaps-samples.googlecode.com/svn/trunk/ggeoxml/cta.kml'
-  });
-  ctaLayer.setMap(map);
-}
-
-google.maps.event.addDomListener(window, 'load', initialize);
-
-    </script>
-  </head>
-  <body>
-    <div id="map-canvas"></div>
-  </body>
-</html>)
-
-```
 
