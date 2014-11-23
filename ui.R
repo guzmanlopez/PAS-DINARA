@@ -34,11 +34,20 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
              
              tabPanel("SIG",
                       icon=icon(name="map-marker", "fa-2x"),
-                      fluidRow(
-                        column(12,
-                               includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
-                               )
-                        )
+                      div(class="outer",
+                          tags$head(
+                                    includeCSS("styles.css"),
+                                    includeScript("gomap.js"),
+                                    includeScript("binding.js")
+                                    ),
+                      includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
+                      )
+                      
+#                       fluidRow(
+#                         column(12,
+#                                includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
+#                                )
+#                         )
 #                       div(class="outer",
 #                           tags$head(
 #                             # Include our custom CSS
