@@ -1,8 +1,8 @@
 library(shiny)
-library(leaflet)
-library(sp)
-library(maptools)
-library(geosphere)
+# library(leaflet)
+# library(sp)
+# library(maptools)
+# library(geosphere)
 library(stringr)
 library(xts)
 
@@ -162,58 +162,58 @@ shinyServer(function(input, output, session) {
   ### Interactive Map ####
   
   # Crear mapa
-  map <- createLeafletMap(session, "map")
+#   map <- createLeafletMap(session, "map")
   
   # Capas:
   
-  capas <- observe({
-    
-    # Estaciones mejillón:
-    
-    if(length(input$capas)==0) {
-      
-      map$clearShapes()
-      return(NULL)
-    }
-    
-    if(length(input$capas)!=0) {
-      
-      map$clearShapes()
-      
-      # Estaciones de mejillón
-      if(length(which(input$capas=='est_mej'))!=0) {
-                
-        map$addCircle(
-          lat=est_mejillon$dd.lat,
-          lng=est_mejillon$dd.lon,
-          radius=10000/max(12, input$map_zoom)^2,
-          layerId=as.character(est_mejillon$est),
-          list(weight = 1,                      # stroke weight
-               fill = TRUE,                     # fill object
-               color = '#808080',               # stroke color, grey
-               opacity = 1,                     # stroke opacity
-               fillColor = 'black',             # fill color
-               fillOpacity = 1,                 # fill opacity
-               clickable = T)
-        )
-      }
-      
-      # Isóbatas
-      if(length(which(input$capas=='isobatas'))!=0) {
-              
-        map$addPolyline(
-          lat=isobatas$lat,
-          lng=isobatas$lon,
-          as.character(1),
-          list(color= '#808080',
-               weight=2,
-               opacity=1,
-               lineJoin='round', clickeable=T)
-        )
-      }
-      
-    }
-      
-  })
+#   capas <- observe({
+#     
+#     # Estaciones mejillón:
+#     
+#     if(length(input$capas)==0) {
+#       
+#       map$clearShapes()
+#       return(NULL)
+#     }
+#     
+#     if(length(input$capas)!=0) {
+#       
+#       map$clearShapes()
+#       
+#       # Estaciones de mejillón
+#       if(length(which(input$capas=='est_mej'))!=0) {
+#                 
+#         map$addCircle(
+#           lat=est_mejillon$dd.lat,
+#           lng=est_mejillon$dd.lon,
+#           radius=10000/max(12, input$map_zoom)^2,
+#           layerId=as.character(est_mejillon$est),
+#           list(weight = 1,                      # stroke weight
+#                fill = TRUE,                     # fill object
+#                color = '#808080',               # stroke color, grey
+#                opacity = 1,                     # stroke opacity
+#                fillColor = 'black',             # fill color
+#                fillOpacity = 1,                 # fill opacity
+#                clickable = T)
+#         )
+#       }
+#       
+#       # Isóbatas
+#       if(length(which(input$capas=='isobatas'))!=0) {
+#               
+#         map$addPolyline(
+#           lat=isobatas$lat,
+#           lng=isobatas$lon,
+#           as.character(1),
+#           list(color= '#808080',
+#                weight=2,
+#                opacity=1,
+#                lineJoin='round', clickeable=T)
+#         )
+#       }
+#       
+#     }
+#       
+#   })
   
   })

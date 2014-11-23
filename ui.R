@@ -1,8 +1,8 @@
 library(shiny)
-library(leaflet)
-library(sp)
-library(maptools)
-library(geosphere)
+# library(leaflet)
+# library(sp)
+# library(maptools)
+# library(geosphere)
 library(stringr)
 library(xts)
 
