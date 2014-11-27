@@ -163,9 +163,9 @@ shinyServer(function(input, output, session) {
   
   # Crear mapa
 #   map <- createLeafletMap(session, "map")
-  
-  # Capas:
-  
+#   
+#   Capas:
+#   
 #   capas <- observe({
 #     
 #     # Estaciones mejillón:

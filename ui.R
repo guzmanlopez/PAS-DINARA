@@ -39,7 +39,7 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                                     includeCSS("styles.css"),
                                     includeScript("gomap.js"),
                                     includeScript("binding.js")
-                                    ),
+                                    ),                                                    
                       includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
                       )
                       
