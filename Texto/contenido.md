@@ -27,9 +27,9 @@ La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal re
 <br>
 <br>
 
-<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag-G6w8ddIaxdDV1M3hCaUV1X2hPVzVPbTVuV1VubWc&font=OpenSans&maptype=osm&lang=es&height=400' width='100%' height='600' frameborder='0'></iframe>
+<iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag-G6w8ddIaxdDV1M3hCaUV1X2hPVzVPbTVuV1VubWc&font=BreeSerif-OpenSans&maptype=osm&lang=es&height=700' width='100%' height='700' frameborder='0'></iframe>
 
-<br>
+------------------------------------------------------------------------
 
 ## Bahía de Maldonado <a name="bdm"></a>
 
