@@ -158,7 +158,10 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                                    h3(p(strong('Contacto'))),
                                    HTML('<div style="clear: left;"><img src="https://raw.githubusercontent.com/guzmanlopez/Pampero/master/Figuras/foto_perfil.jpg" alt="" style="float: left; margin-right:5px" /></div>'),
                                    strong('Autor'),
-                                   p(a('Guzmán López', href="https://www.linkedin.com/pub/guzm%C3%A1n-l%C3%B3pez/59/230/812", target="_blank"),' - glopez@dinara.gub.uy',br(),'Biólogo | Asesor en Hidroacústica',br(),a('Laboratorio de Tecnología Pesquera - Hidroacústica (DINARA - MGAP)',href="http://www.dinara.gub.uy", target="_blank")),
+                                   p(a('Guzmán López', href="https://www.linkedin.com/pub/guzm%C3%A1n-l%C3%B3pez/59/230/812", target="_blank"),' - (Correo:',
+                                     a('glopez@dinara.gub.uy', target="_blank"),' | ', 'Telegram:', a('@Guzman', href="https://telegram.me/Guzman", target="_blank"),')',
+                                     br(),
+                                     'Biólogo | Asesor en Hidroacústica',br(),a('Laboratorio de Tecnología Pesquera - Hidroacústica (DINARA - MGAP)',href="http://www.dinara.gub.uy", target="_blank")),
                                    br()
                                    )
                           )
