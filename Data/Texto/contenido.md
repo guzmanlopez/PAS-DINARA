@@ -2,7 +2,7 @@
 output: html_document
 ---
 
-<div style="clear: right;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/LOGO_PAS_CIPAC_web.jpg" alt="" style="float: right; margin-right:20px"/></div> 
+<div style="clear: right;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/img/LOGO_PAS_CIPAC_web.jpg" alt="" style="float: right; margin-right:20px"/></div> 
 <br>
 
 # PAS-CIPAC <a name="pascipac"></a>
@@ -11,7 +11,7 @@ output: html_document
 El PAS-CIPAC es un grupo de investigadores del Programa de Arqueología Subacuática (PAS) de la Facultad de Humanidades y Ciencias de la Eduacación y del Centro de Investigación del Patrimonio Costero (CIPAC) en el Centro Universitario de la Región Este (CURE), ambas instituciones de la Universidad de la República - Uruguay. Hoy día el PAS-CIPAC constiuye una Unidad Asociada de la universidad compartiendo recursos humanos y materiales, para la investigación cientifica, gestion, enseñanza y divulgacion en la tematicas del >Patrimonio Cultural Subacuático, maritimo y costero en el Uruguay.
 </p>
 
-</a><div style="clear: right;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/logo_DINARA.png" alt="" style="float: right; margin-right:20px"/></div>
+</a><div style="clear: right;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/img/logo_DINARA.png" alt="" style="float: right; margin-right:20px"/></div>
 <br>
 
 # DINARA <a name="dinara"></a>
@@ -69,13 +69,13 @@ características del fondo marino (Figura 1). A través de los registros acústi
 </p>
 
 <br>
-<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/Primer-salida-06-jun-2014.png" alt="" style="width: 60%; height: 60%; float: center; margin-right:0px"/></div> 
+<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/img/Primer-salida-06-jun-2014.png" alt="" style="width: 60%; height: 60%; float: center; margin-right:0px"/></div> 
 <br>
 
 **Figura 1 –** Recorrido realizado con el Sonar de Barrido Lateral (SBL).
 
 <br>
-<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/Sonar-arena-roca-y-foto-arena-video.png" alt="" style="float: center; margin-right:0px"/></div> 
+<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/img/Sonar-arena-roca-y-foto-arena-video.png" alt="" style="float: center; margin-right:0px"/></div> 
 <br>
 
 **Figura 2 –** Imagen de Sonar de Barrido Lateral (SBL) de un fondo marino arenoso con marcas de ripples y fotograma de filmación subacuática del mismo tipo de fondo (B). En C se muestra una imagen de SBL de un fondo marino rocoso.
@@ -91,7 +91,7 @@ La embarcación se mostro apta, versátil y con la seguridad necesaria para reci
 <br>
 <br>
 <br>
-<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/fotos-salida-01.png" alt="" style="float: center; margin-right:0px"/></div> 
+<div style="float: center;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/img/fotos-salida-01.png" alt="" style="float: center; margin-right:0px"/></div> 
 <br>
 ------------------------------------------------------------------------
 

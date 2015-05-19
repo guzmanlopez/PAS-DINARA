@@ -23,11 +23,11 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                       fluidRow(
                         column(2,
                                offset=0.5,
-                               includeMarkdown("/home/guzman/Documentos/GitHub/PAS-DINARA/Texto/indice.md")
+                               includeMarkdown("Data/Texto/indice.md")
                         ),
                         column(10,
                                offset=-0.5,
-                               includeMarkdown("/home/guzman/Documentos/GitHub/PAS-DINARA/Texto/contenido.md")
+                               includeMarkdown("Data/Texto/contenido.md")
                                )
                         )
                       ),
@@ -36,11 +36,11 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                       icon=icon(name="map-marker", "fa-2x"),
                       div(class="outer",
                           tags$head(
-                                    includeCSS("styles.css"),
-                                    includeScript("gomap.js"),
-                                    includeScript("binding.js")
+                                    includeCSS("css/styles.css"),
+                                    includeScript("js/gomap.js"),
+                                    includeScript("js/binding.js")
                                     ),                                                    
-                      includeMarkdown('/home/guzman/Documentos/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
+                      includeMarkdown('Data/SIG/SIG-googlemap.Rmd')
                       )
                       
 #                       fluidRow(
@@ -134,7 +134,7 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
              
              tabPanel("Acerca de esta APP", icon=icon(name="comments", "fa-2x"),
                       sidebarPanel(
-                        HTML('<div style="clear: left;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Iconos%20y%20figuras/Logos-PAS-DINARA.png"/></div>')
+                        HTML('<div style="clear: left;"><img src="https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Logos-PAS-DINARA.png"/></div>')
                         ),
                       mainPanel(
                           tabPanel("Acerca de esta APP",
