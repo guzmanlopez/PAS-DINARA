@@ -23,11 +23,11 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                       fluidRow(
                         column(2,
                                offset=0.5,
-                               includeMarkdown("/home/guzman/GitHub/PAS-DINARA/Texto/indice.md")
+                               includeMarkdown("/home/guzman/Documentos/GitHub/PAS-DINARA/Texto/indice.md")
                         ),
                         column(10,
                                offset=-0.5,
-                               includeMarkdown("/home/guzman/GitHub/PAS-DINARA/Texto/contenido.md")
+                               includeMarkdown("/home/guzman/Documentos/GitHub/PAS-DINARA/Texto/contenido.md")
                                )
                         )
                       ),
@@ -40,7 +40,7 @@ shinyUI(navbarPage(title="Convenio PAS-DINARA",
                                     includeScript("gomap.js"),
                                     includeScript("binding.js")
                                     ),                                                    
-                      includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
+                      includeMarkdown('/home/guzman/Documentos/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
                       )
                       
 #                       fluidRow(

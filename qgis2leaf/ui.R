@@ -29,15 +29,25 @@ shinyUI(navbarPage(title="Convenio PAS-CIPAC/DINARA",
              
              tabPanel("SIG",
                       icon=icon(name="map-marker", "fa-2x"),
-                      div(class="outer",
-                          tags$head(
-                                    includeCSS("styles.css"),
-                                    includeScript("gomap.js"),
-                                    includeScript("binding.js")
-                                    ),                                                    
-                      includeMarkdown('/home/guzman/GitHub/PAS-DINARA/SIG/SIG-googlemap.Rmd')
-                      )
-                      ),
+                      
+                      includeHTML("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/index (copia) (copia).html"),
+                                            
+                      includeCSS("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/css/leaflet.css"),
+                      includeCSS("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/css/MarkerCluster.css"),
+                      includeCSS("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/css/MarkerCluster.Default.css"),
+                      includeCSS("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/css/own_style.css"),
+                      includeCSS("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/css/label.css"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/jquery-1.11.1.min.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/Autolinker.min.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/leaflet.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/leaflet-hash.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/label.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/js/leaflet.markercluster.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/data/exp_Isobatas.js"),
+                      includeScript("/home/guzman/GitHub/PAS-DINARA/qgis2leaf/www/data/exp_DensidadfondeosAIS20122013.js")
+                      
+              
+),
              
              tabPanel("Cargar SBL", icon=icon(name="file", "fa-2x"),
                       sidebarPanel(

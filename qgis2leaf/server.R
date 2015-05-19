@@ -123,5 +123,5 @@ shinyServer(function(input, output, session) {
   output$table <- renderDataTable({
     datasetInput_pos()
   })
-  
+    
   })

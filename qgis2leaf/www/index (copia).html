@@ -1,22 +1,21 @@
 
-<!DOCTYPE html>
 <html>
 <head> 
 	<title>Convenio PAS-CIPAC / DINARA</title>
 	
 	<meta charset="utf-8" />
-	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" /> <!-- we will us e this as the styling script for our webmap-->
+	<link rel="stylesheet" href="css/leaflet.css" /> <!-- we will us e this as the styling script for our webmap-->
 	<link rel="stylesheet" href="css/MarkerCluster.css" />
 	<link rel="stylesheet" href="css/MarkerCluster.Default.css" />
 	<link rel="stylesheet" type="text/css" href="css/own_style.css">
 	<link rel="stylesheet" href="css/label.css" />
-	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script> <!-- this is the javascript file that does the magic-->
+	<script src="js/jquery-1.11.1.min.js"></script> <!-- this is the javascript file that does the magic-->
 	<script src="js/Autolinker.min.js"></script>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
 </head>
 <body>
 	<div id="map"></div> <!-- this is the initial look of the map. in most cases it is done externally using something like a map.css stylesheet were you can specify the look of map elements, like background color tables and so on.-->
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script> <!-- this is the javascript file that does the magic-->
+	<script src="js/leaflet.js"></script> <!-- this is the javascript file that does the magic-->
 	<script src="js/leaflet-hash.js"></script>
 	<script src="js/label.js"></script>
 	<script src="js/leaflet.markercluster.js"></script>
@@ -97,7 +96,7 @@
 	var baseMaps = {
 		'MapQuestOpen OSM': basemap_0
 	};
-	L.control.layers(baseMaps,{"Isobatas": exp_IsobatasJSON,"DensidadfondeosAIS20122013": exp_DensidadfondeosAIS20122013JSON},{collapsed:false}).addTo(map);
+	L.control.layers(baseMaps,{"Isóbatas": exp_IsobatasJSON,"Densidad fondeos AIS (2012-2013)": exp_DensidadfondeosAIS20122013JSON},{collapsed:false}).addTo(map);
 	L.control.scale({options: {position: 'bottomleft',maxWidth: 100,metric: true,imperial: false,updateWhenIdle: false}}).addTo(map);
 	</script>
 </body>
