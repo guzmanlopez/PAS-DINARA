@@ -107,7 +107,9 @@ shinyServer(function(input, output, session) {
       df_pos = data.frame("Tiempo"=as.character(df$V1), "LAT"=as.character(df$V2), "LON"=as.character(df$V3), "UTM_N"=as.character(df$V4), "UTM_E"=as.character(df$V5))
 
       # Exportar
-      if(exportar == 'si') write.table(df_pos, paste(wd,nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
+      wd = getwd()
+      
+      if(exportar == 'si') write.table(df_pos, paste(getwd(),nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
 
       if(exportar == 'no') return(df_pos)
 
@@ -117,6 +119,8 @@ shinyServer(function(input, output, session) {
       df_pos = as.data.frame(df_pos)
 
       # Exportar
+      wd = getwd()
+      
       if(exportar == 'si') write.table(df_pos, paste(wd,nombre_archivo,".csv", sep=""), sep=",", row.names=FALSE) & return(df_pos)
 
       if(exportar == 'no') return(df_pos)

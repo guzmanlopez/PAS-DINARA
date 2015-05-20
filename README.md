@@ -19,11 +19,11 @@ library('geosphere')
 library('stringr')
 library('xts')
 ```
-Para ejecutar la aplicación desde R: 
+Para ejecutar la aplicación desde R:
 ===
 
 ```R
-runGitHub('PAS-DINARA', 'guzmanlopez')
+shiny::runGitHub('PAS-DINARA', 'guzmanlopez')
 ```
 
 Capturas de pantalla
