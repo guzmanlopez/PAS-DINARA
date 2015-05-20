@@ -2,17 +2,13 @@
 output: html_document
 ---
 
-### Instituciones
-
+# Instituciones
 [PAS-CIPAC](#pascipac)
 
 [DINARA](#dinara)
-    
-### Actividades
 
+# Actividades
 [Línea de Tiempo](#ldt)
 
 [Bahía de Maldonado](#bdm)
-
-  * [Primer salida: 06/06/2014](#bdm1)
-  
+- [Primer salida: 06/06/2014](#bdm1)
