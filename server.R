@@ -43,9 +43,12 @@ shinyServer(function(input, output, session) {
   ### Entradas de datos ####
   datasetInput <- reactive({
 
-    if (is.null(input$file1)) return(NULL) else sss <- unlist(strsplit(x=readLines(file(input$file1$datapath),n=4000,), split=","))
+    if (is.null(input$file1)) return(NULL)
+    else {
+      sss <- unlist(strsplit(x = readLines(file(input$file1$datapath), n = 4000,), split = ","))
+    }
     return(sss)
-  })
+    })
 
   #### Extraer Posiciones con resolución ####
   datasetInput_pos <- reactive ({

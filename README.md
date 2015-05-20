@@ -30,16 +30,16 @@ Capturas de pantalla
 ===
 
 Bitácora:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Captura-de-pantalla-01.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Screenshots/Captura-de-pantalla-01.png)
 
 Seguimiento de actividades:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Captura-de-pantalla-02.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Screenshots/Captura-de-pantalla-02.png)
 
 SIG:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Captura-de-pantalla-03.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Screenshots/Captura-de-pantalla-03.png)
 
 Cargar datos:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Captura-de-pantalla-04.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Screenshots/Captura-de-pantalla-04.png)
 
 Acerca de la app:
-![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Captura-de-pantalla-05.png)
+![Image](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Screenshots/Captura-de-pantalla-05.png)
