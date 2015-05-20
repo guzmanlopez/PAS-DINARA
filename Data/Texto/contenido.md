@@ -13,7 +13,7 @@ El PAS-CIPAC es un grupo de investigadores del Programa de Arqueología Subacuá
 La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal responsable de regular y controlar la actividad pesquera y acuícola en Uruguay. La DINARA pertenece al Ministerio de Ganadería, Agricultura y Pesca (MGAP) de Uruguay y es quien define y ejecuta la política pesquera y acuícola del gobierno nacional.
 
 <a name="timeline"></a>
-# Línea de Tiempo de actividades del convenio
+## Línea de Tiempo de actividades del convenio
 
 <iframe src='http://cdn.knightlab.com/libs/timeline/latest/embed/index.html?source=0Ag-G6w8ddIaxdDV1M3hCaUV1X2hPVzVPbTVuV1VubWc&font=BreeSerif-OpenSans&maptype=osm&lang=es' width='100%' height='700px' frameborder='0'></iframe>
 
@@ -68,12 +68,20 @@ La embarcación se mostro apta, versátil y con la seguridad necesaria para reci
 
 #### Objetivos:
 
-
 Experimentar y evaluar el uso de parte del equipamiento científico - técnico que será utilizado durante la ejecución de la propuesta “Caracterización del fondo marino en la Bahía de Maldonado (inmediaciones de la Isla Gorriti) y evaluación de mejillón (*Mytilus edulis platensis*)”. Evaluar la calidad de los registros acústicos a través del acoplamiento de un estabilizador al Sonar de Barrido Lateral (SBL).
 
 #### Prueba de mar:
 
 Se realizó una salida de campo para probar un estabilizador perteneciente a la DINARA de una antigua ecosonda SIMRAD EYM que transportaba un transductor. La experiencia consistió en remolcar un sonar de barrido lateral modelo StarFish 990F de Tritech perteneciente al PAS acoplado al estabilizador desde una embarcación semi-rígida modelo Zodiac y registrar la calidad de los registros acústicos obtenidos (Figura 1 y Figura 2).
+
+[![SBL-12052015a](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Salidas/120515/BM-SBL-distintos-fondos.png)](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Salidas/120515/BM-SBL-distintos-fondos.png "Ver figura")
+
+**Figura 1 –** Imagen de sonar de barrido lateral dónde se observan distintos tipos de fondos: arenoso con marcas de ripples, arenoso fino compactado (probable) y rocas.
+
+[![SBL-12052015b](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Salidas/120515/BM-SBL-ripples.png)](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Salidas/120515/BM-SBL-ripples.png "Ver figura")
+
+**Figura 2 –** Imagen de sonar de barrido lateral dónde se observa un fondo de arena con marcas de ripples. La altura de los ripples medida a través de la imagen obtenida fue de 10 cm.
+
 
 #### Resultados preliminares
 
@@ -81,15 +89,15 @@ A partir de la experiencia realizada se constató una mejoría en los registros 
 
 #### Perspectivas
 
-**Mapeo de la navegación en vivo.**
+- **Mapeo de la navegación en vivo.**
 
 A partir de esta salida se observó la necesidad de contar con un navegador para poder realizar las transectas rectas y paralelas entre si. Para ello se va a probar el software QGIS conectado a un GPS para seguimiento en tiempo real.  Esto permite además contar con toda la información espacial necesaria y de interés en cada salida.
 
-**Complementar con ecosonda portátil split-beam de DINARA para batimetría y concentración y distribución espacial de peces.**
+- **Complementar con ecosonda portátil split-beam de DINARA para batimetría y concentración y distribución espacial de peces.**
 
 Dado que además se pretende generar un mapa batimétrico de la zona, está pendiente la prueba de utilizar los dos equipos simultáneamente. Esta prueba es necesaria para evitar posibles interferencias de los equipos acústicos entre si y encontrar la mejor forma de amarre de la ecosonda split-beam posible. Además de la batimetría va a ser posible estimar la concentración y distribución espacial de peces en cada salida.
 
-**Coordinación de los equipos de trabajo PAS/CIPAC – DINARA.**
+- **Coordinación de los equipos de trabajo PAS/CIPAC – DINARA.**
 
 Es necesario implementar protocolos de trabajo de mutuo acuerdo entre las instituciones involucradas a la hora de coordinar:
 

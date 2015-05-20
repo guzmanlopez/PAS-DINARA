@@ -11,8 +11,7 @@ div.outer {
   padding: 0;
 }
 /* Customize fonts */
-
-body, label, input, button, select {
+/* body, label, input, button, select {
   font-family: 'Open Sans';
   font-size: 14px;
   font-weight: 400;
@@ -20,6 +19,48 @@ body, label, input, button, select {
 }
 h1, h2, h3, h4 {
   font-weight: 500;
+}
+*/
+
+h1 {
+  font-family: Open Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 26.4px;
+}
+h3 {
+  font-family: Open Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 500;
+  line-height: 15.4px;
+}
+p {
+  font-family: Open Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 22.85px;
+}
+blockquote {
+  font-family: Open Sans;
+  font-size: 21px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+pre {
+  font-family: Open Sans;
+  font-size: 13px;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 18.5667px;
 }
 #controls {
   /* Appearance */

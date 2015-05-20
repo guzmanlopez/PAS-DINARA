@@ -2,12 +2,12 @@
 output: html_document
 ---
 
-# Instituciones
+## Instituciones
 [PAS-CIPAC](#pascipac)
 
 [DINARA](#dinara)
 
-# Actividades
+## Actividades
 [Línea de Tiempo](#timeline)
 
 [Bahía de Maldonado](#bm)
