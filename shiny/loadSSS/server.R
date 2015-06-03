@@ -56,7 +56,19 @@ shinyServer(function(input, output, session) {
         file.remove(Sys.glob(paste(input$filename, ".*", sep = "")))
       }
     }
-  ) 
+  )
+  
+  # KML
+  output$action_exp_kml <- downloadHandler(filename = function() {
+    paste(input$filename, '.kml', sep = '')
+  },
+  content = function(con) {
+    positions2Lines <- sssGPS2SHP(positions = df_gps, trackname = input$trackname)
+    kmlLine(obj = positions2Lines, kmlfile = con, name = input$trackname, description="", col = "black", visibility = 1, lwd = 1, kmlname = paste("StarFish990F-", input$trackname, sep = ""), kmldescription="")    
+    #write.table(x = df_gps, sep = ",", row.names = FALSE, file = con)
+  },
+  contentType = "text/xml"
+  )
   
   ### Tabla ####
   output$table <- renderDataTable({
