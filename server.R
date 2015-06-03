@@ -5,8 +5,9 @@ library(maptools)
 library(geosphere)
 library(stringr)
 library(xts)
+library(markdown)
 
-options(shiny.maxRequestSize=300*1024^2, digits=16)
+options(shiny.maxRequestSize = 300*1024^2, digits=16)
 
 # Extensión
 #xmin <- -55.0853471962

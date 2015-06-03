@@ -3,14 +3,14 @@ output: html_document
 ---
 
 <a name="pascipac"></a>
-[![Logo PAS-CIPAC](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Logos/LOGO_PAS_CIPAC_web.jpg)](http://pas-cipac.cure.edu.uy/ "Ir a página web del PAS-CIPAC")
+[![Logo PAS-CIPAC](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Logos/LOGO_PAS_CIPAC_web.jpg)](http://pas-cipac.cure.edu.uy/ "Ir a página web del PAS-CIPAC")  
 
 El PAS-CIPAC es un grupo de investigadores del Programa de Arqueología Subacuática (PAS) de la Facultad de Humanidades y Ciencias de la Eduacación y del Centro de Investigación del Patrimonio Costero (CIPAC) en el Centro Universitario de la Región Este (CURE), ambas instituciones de la Universidad de la República - Uruguay. Hoy día el PAS-CIPAC constituye una Unidad Asociada de la universidad compartiendo recursos humanos y materiales, para la investigación científica, gestión, enseñanza y divulgación en la temáticas del Patrimonio Cultural Subacuático, marítimo y costero en el Uruguay.
 
 <a name="dinara"></a>
-[![Logo DINARA](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Logos/logo_DINARA.png)](https://www.dinara.gub.uy "Ir a página web de DINARA")
+[![Logo DINARA](https://raw.githubusercontent.com/guzmanlopez/PAS-DINARA/master/Data/img/Logos/logo_DINARA.png)](https://www.dinara.gub.uy "Ir a página web de DINARA")  
 
-La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal responsable de regular y controlar la actividad pesquera y acuícola en Uruguay. La DINARA pertenece al Ministerio de Ganadería, Agricultura y Pesca (MGAP) de Uruguay y es quien define y ejecuta la política pesquera y acuícola del gobierno nacional.
+La Dirección Nacional de Recursos Acuáticos (DINARA), es la entidad estatal responsable de regular y controlar la actividad pesquera y acuícola en Uruguay. La DINARA pertenece al Ministerio de Ganadería, Agricultura y Pesca (MGAP) de Uruguay y es quien define y ejecuta la política pesquera y acuícola del gobierno nacional.  
 
 <a name="timeline"></a>
 ## Línea de Tiempo de actividades del convenio

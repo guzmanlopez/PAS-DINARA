@@ -5,22 +5,24 @@ library(maptools)
 library(geosphere)
 library(stringr)
 library(xts)
+library(markdown)
 
 # Ampliar a 16 el número de dígitos 
 options(digits=16)
 
 # Sonar Barrido Lateral
 
-shinyUI(navbarPage(title = "Convenio PAS-DINARA", inverse = TRUE, collapsable = TRUE, fluid = TRUE, responsive = TRUE,
+shinyUI(navbarPage(title = "Convenio PAS-DINARA", inverse = TRUE, collapsible = TRUE, fluid = TRUE, responsive = TRUE,
                    tabPanel("Bitácora",
-                            icon=icon(name="location-arrow", "fa-2x"),
+                            icon = icon(name = "location-arrow", "fa-2x"),
                             fluidRow(
                               column(2,
-                                     offset=0.5,
+                                     offset = 0.5,
                                      includeMarkdown("Data/Texto/indice.md")
                                      ),
                               column(10,
-                                     offset=-0.5,
+                                     offset = -0.5,
+                                     includeCSS("css/styles.css"),
                                      includeMarkdown("Data/Texto/contenido.md")
                                      )
                               )
