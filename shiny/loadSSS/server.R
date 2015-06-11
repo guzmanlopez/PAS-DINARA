@@ -4,16 +4,19 @@ library(xts)
 library(sp)
 library(maptools)
 library(rgdal)
+library(leaflet)
 
 # File upload size = 800 mb
 options(shiny.maxRequestSize = 800*1024^2, digits = 16, shiny.deprecation.messages = FALSE)
 
 shinyServer(function(input, output, session) {
   
-  # Entradas de datos (ojo, sacar n luego de pruebas!) , n = 4000
+  # Entradas de datos
   datasetInput <- reactive({
     if (is.null(input$file1)) return(NULL) else {
-      sss <- unlist(strsplit(x = readLines(file(input$file1$datapath) ), split = ","))
+      con <- file(input$file1$datapath)
+      sss <- unlist(strsplit(x = readLines(con = con),  split = ","))
+      close(con)
       return(sss)
     }    
   })
@@ -48,7 +51,7 @@ shinyServer(function(input, output, session) {
       if (length(Sys.glob(paste(input$filename, ".*", sep = ""))) > 0){
         file.remove(Sys.glob(paste(input$filename, ".*", sep = "")))
       }
-      positions2Lines <- sssGPS2SHP(positions = df_gps, trackname = input$trackname)
+      positions2Lines <<- sssGPS2SHP(positions = df_gps, trackname = input$trackname)
       writeOGR(obj = positions2Lines, dsn = paste(input$filename, ".shp", sep = ""), layer = input$trackname, driver = "ESRI Shapefile")
       zip(zipfile = paste(input$filename, "Export", ".zip", sep = ""), files = Sys.glob(paste(input$filename, ".*", sep = "")))
       file.copy(paste(input$filename, "Export", ".zip", sep = ""), file)
@@ -75,5 +78,41 @@ shinyServer(function(input, output, session) {
     datasetInput_pos()
   })
   
+  ### Mapa ####
+  output$mapa <- renderLeaflet({
+    
+    proxy <- leafletProxy(mapId = "mapa")
+    
+    # Mapas base
+    if(input$mapabase == "MBantiguo"){
+      proxy %>% addProviderTiles(provider = 'MapBox.guzman.mbpa2kjj')
+    }
+
+    if(input$mapabase == "MBsathib"){
+      proxy %>% addProviderTiles(provider = 'MapBox.guzman.lgoi91mh')
+    }
+
+    if(input$mapabase == "MBoutdoor"){
+      proxy %>% addProviderTiles(provider = 'MapBox.guzman.j035h3hc')
+    }
+    
+    if(input$mapabase == "OSM") {
+      proxy %>% addProviderTiles(provider = 'CartoDB.Positron')
+    }
+    
+    # Capas 
+    if(length(df_gps) != 0 && !is.null(input$capaSBL)) {
+      proxy %>% clearShapes()
+      proxy %>% addPolylines(lng = as.numeric(as.character(df_gps$LON)), lat = as.numeric(as.character(df_gps$LAT)), smoothFactor = 1, color = "black", opacity = 1)
+      proxy %>% fitBounds(lng1 = min(as.numeric(as.character(df_gps$LON))),
+                          lng2 = max(as.numeric(as.character(df_gps$LON))),
+                          lat1 = min(as.numeric(as.character(df_gps$LAT))),
+                          lat2 = max(as.numeric(as.character(df_gps$LAT))))
+    } 
+    
+    proxy %>% setView(lng = -55.5, lat = -35, zoom = 8)
+    
+    })
   
-})
+  })
+
